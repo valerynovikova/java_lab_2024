@@ -1,0 +1,3 @@
+### Получение информации о кинотеатрах и отелях Казани
+
+GET localhost:8080/info?hotels_page=0&city=Казань&cinemas_page=0
