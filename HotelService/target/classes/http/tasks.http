@@ -1,0 +1,19 @@
+### Получение списка задач
+
+GET localhost:8080/api/tasks?api-key=test-api-key&page=0
+
+### Получение одной задачи
+
+GET localhost:8080/api/tasks/1
+
+### Добвление задачи
+
+POST localhost:8080/api/tasks
+Content-Type: application/json
+
+{
+  "title": "Новая задача!",
+  "description": "Обязательно выполнять!",
+  "start": "02.02.2022",
+  "finish": "02.03.2022"
+}

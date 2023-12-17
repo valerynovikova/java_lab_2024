@@ -1,0 +1,23 @@
+### Добили отель
+
+POST localhost:8081/api/hotels?api-key=hotels-key
+Content-Type: application/json
+
+{
+  "title": "Ривьера",
+  "address": "улица Фатыха Амирхана 1",
+  "city": "Казань",
+  "rooms" : 8
+}
+
+
+### Получение списка отелей
+
+GET localhost:8081/api/hotels?api-key=hotels-key&page=1
+
+
+### Получение списка отелей города Казань
+
+GET localhost:8081/api/hotels/city?api-key=hotels-key&page=0&city=Казань
+
+

@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:file:~/databases/ts_db;AUTO_SERVER=TRUE
+    username: admin
+    password: qwerty007
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+tasks:
+  page:
+    size: 3
+
+app:
+  api:
+    authentication:
+      key: ${API_KEY}
