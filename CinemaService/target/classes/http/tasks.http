@@ -1,0 +1,20 @@
+
+
+### Добвление кинотеатра
+
+POST localhost:8080/api/cinemas?api-key=cinema-key
+Content-Type: application/json
+
+{
+  "title": "Аймакс",
+  "address": "Николая Ершова,59",
+  "city": "Казань"
+}
+### Получение списка кинотеатров
+
+GET localhost:8080/api/cinemas?api-key=cinema-key&page=0
+
+
+### Получение кинотеатров в городе
+
+GET localhost:8080/api/cinemas?api-key=cinema-key&page=0&city="Казань"
