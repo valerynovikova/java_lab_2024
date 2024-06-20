@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option java_package = "ru.itis.users.grpc.pb";
+option java_multiple_files = true;
+
+service UserService {
+  rpc GetUser(UserRequest) returns (UserResponse) {}
+}
+
+message UserRequest {
+  string id = 1;
+}
+
+message UserResponse {
+  string name = 1;
+}
