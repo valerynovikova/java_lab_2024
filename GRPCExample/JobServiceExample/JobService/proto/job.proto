@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option go_package = "./proto";
+
+service JobService {
+  rpc ListAll(WhoAreYouParams) returns (stream Job) {}
+}
+
+message WhoAreYouParams {}
+
+message Job {
+  string id = 1;
+  string company = 2;
+  int32 work_experience = 3;
+}
+
+
+//protoc --go_out=. --go-grpc_out=. .\proto\Job.proto

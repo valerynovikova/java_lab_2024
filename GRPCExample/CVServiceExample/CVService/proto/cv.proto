@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option go_package = "./proto";
+
+service CvService {
+  rpc ListAll(WhoAreYouParams) returns (stream Cv) {}
+}
+
+message WhoAreYouParams {}
+
+message Cv {
+  string id = 1;
+  string name = 2;
+  int32 age = 3;
+  repeated string hard_skills = 4;
+}
+

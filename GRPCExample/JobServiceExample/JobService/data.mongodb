@@ -1,0 +1,23 @@
+use job_db
+
+db.jobs
+    .insertOne(
+        {
+            "company": "BarseGroup",
+            "work_experience": 5,
+
+        })
+
+db.jobs
+    .insertOne(
+        {
+            "company": "HighTech",
+            "work_experience": 10,
+        })
+
+db.jobs
+    .insertOne(
+        {
+            "company": "HighTech",
+            "work_experience": 50,
+        })

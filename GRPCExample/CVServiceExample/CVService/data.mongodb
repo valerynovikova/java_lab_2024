@@ -1,0 +1,41 @@
+use cv_db
+
+db.cvs
+    .insertOne(
+        {
+            "name": "Valerie",
+            "age": 30,
+            "hard_skills": ["nothing"]
+        })
+
+db.cvs
+    .insertOne(
+        {
+            "name": "Valerie",
+            "age": 60,
+            "hard_skills": ["nothing"]
+        })
+
+db.cvs
+    .insertOne(
+        {
+            "name": "Valerie",
+            "age": 35,
+            "hard_skills": ["nothing"]
+        })
+
+db.cvs
+    .insertOne(
+        {
+            "name": "Valerie",
+            "age": 20,
+            "hard_skills": ["nothing"]
+        })
+
+db.cvs
+    .insertOne(
+        {
+            "name": "Valerie",
+            "age": 50,
+            "hard_skills": ["nothing"]
+        })
